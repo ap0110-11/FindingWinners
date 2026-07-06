@@ -64,10 +64,10 @@ Companies that are candidates for deeper research and potential investment. Grou
 - **Company:** Micron Technology
 - **Theme:** HBM (High Bandwidth Memory), DRAM, NAND, AI Memory
 - **Notes:**
-  - FQ2 2026: Revenue $23.86B (+196% YoY). Records in revenue, GM, EPS, FCF.
-  - FQ3 guide: $33.5B. HBM supply fully sold out for CY2026.
-  - HBM4 volume shipping for NVIDIA Vera Rubin. HBM4E ramping CY2027.
-  - Stock at ~$1,068, market cap $1.17T. Earnings June 24.
+  - FQ3 2026 (June 24): Revenue $41.46B (+346% YoY). Non-GAAP EPS $25.11. Data center rev >$25B.
+  - FQ4 guide: record $50B ±$1B, ~86% gross margin, EPS ~$31.
+  - HBM3E/HBM4 fully booked through CY2027, demand into 2028. Tightness "beyond 2027." HBM TAM >$100B in 2027.
+  - Stock jumped ~15% on print (~$1,199) then -10% on July 1 "Meta Compute" glut fear (erased ~$138B).
 
 ### SNDK
 - **Company:** Sandisk Corporation
@@ -98,10 +98,11 @@ Companies that are candidates for deeper research and potential investment. Grou
 - **Theme:** Data Centers, AI Cloud, Power Infrastructure
 - **Notes:**
   - $3.4B 5-year NVIDIA contract + $9.7B Microsoft contract = $13.1B contracted revenue
-  - 5GW strategic NVIDIA partnership, NVIDIA option to invest $2.1B at $70/share
-  - Stock fell 6.77% after Q3 FY26 earnings despite massive deals
-  - Targeting $3.7B ARR by end of CY2026, $4.4B after Blackwell commissioning early 2027
-  - Current quarterly revenue only $144.8M (still transitioning from Bitcoin mining)
+  - Closed $3.65B investment-grade GPU financing (June 1). Targeting $3.7B ARR end CY2026.
+  - **THESIS MUDDIED (early July):** Stock crashed ~$59 -> ~$39. Two hits:
+    (1) "Meta Compute" threatens neocloud GPU-rental economics (IREN is a compute reseller).
+    (2) $800M/18.2M-RSU co-CEO grant triggered governance backlash (Jim Chanos public attack).
+  - Consensus PT still ~$78-80 but competitive + governance overhangs now real. Hold/watch, not add.
 
 ### BRUN
 - **Company:** Boost Run
@@ -137,8 +138,8 @@ Companies that are candidates for deeper research and potential investment. Grou
   - Largest US nuclear fleet (~90% generation from nuclear). Acquired Calpine for gas/battery.
   - Microsoft 20-year PPA for Crane (Three Mile Island restart, 830MW). Meta 20-year PPA for 1.1GW at Clinton.
   - Q1 2026 EPS $2.74 (beat $2.59). FY2026 guide $11-12/share. 1GW nuclear uprates, $3.9B capex.
-  - Stock at ~$257 vs median analyst PT $404. PJM colocation rules are the key overhang.
-  - 25M-share lockup expiration June 30.
+  - Stock ~$239 vs median PT ~$358 (+50%). Pressured by block-share overhang (~$279-281 offering price).
+  - Overbuilding fear is misdirected: PJM hit record 166GW demand July 2, prices spiked ~900%. Power is the bottleneck, not compute. Q2 earnings Aug 6.
 
 ### VST
 - **Company:** Vistra
@@ -147,7 +148,7 @@ Companies that are candidates for deeper research and potential investment. Grou
   - Largest unregulated US power producer. Cogentrix 5,500MW gas acquisition closed.
   - Meta 20-year PPA for 2,600MW nuclear (Beaver Valley + Comanche Peak). Perry nuclear restart underway.
   - Record Q1 EBITDA. Targeting $10B+ cash generation 2026-2027.
-  - Stock at ~$147 vs analyst target ~$225. Down 7% YTD. P/E ~25x.
+  - Stock ~$153-158 vs target ~$225-231 (+45%). Power name misread as AI-infra in July selloff. Q2 earnings Aug 6.
 
 ### VRT
 - **Company:** Vertiv Holdings
@@ -193,4 +194,5 @@ Companies that are candidates for deeper research and potential investment. Grou
 - **Theme:** CRM, Enterprise AI, Agentforce
 - **Notes:**
   - Agentforce ARR >$1.2B (+205% YoY). 3.8B Agentic Work Units delivered.
-  - Stock barely moved on May 27 earnings despite strong AI metrics — revenue slightly missed.
+  - Stock ~$166, near 52-wk low ($146-277), P/E ~19x, target $246. Earnings Sep 2.
+  - Demand-side AI beneficiary: cheaper compute helps Agentforce economics. Insulated from overbuilding glut fear.
