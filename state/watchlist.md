@@ -67,7 +67,9 @@ Companies that are candidates for deeper research and potential investment. Grou
   - FQ3 2026 (June 24): Revenue $41.46B (+346% YoY). Non-GAAP EPS $25.11. Data center rev >$25B.
   - FQ4 guide: record $50B ±$1B, ~86% gross margin, EPS ~$31.
   - HBM3E/HBM4 fully booked through CY2027, demand into 2028. Tightness "beyond 2027." HBM TAM >$100B in 2027.
-  - Stock jumped ~15% on print (~$1,199) then -10% on July 1 "Meta Compute" glut fear (erased ~$138B).
+  - SK Hynix CEO (July 10): 2027 "worst year" for shortage, demand > supply beyond 2030. Non-cancelable LTAs to 2030.
+  - Stock ~$930 (fwd P/E ~13x vs industry ~28x) after de-rating on sentiment/rates/Iran, NOT fundamentals. Thesis intact — mismatch.
+  - $250B US capex plan through 2035. Watch SK Hynix earnings July 29 + hyperscaler capex late July.
 
 ### SNDK
 - **Company:** Sandisk Corporation
@@ -102,7 +104,8 @@ Companies that are candidates for deeper research and potential investment. Grou
   - **THESIS MUDDIED (early July):** Stock crashed ~$59 -> ~$39. Two hits:
     (1) "Meta Compute" threatens neocloud GPU-rental economics (IREN is a compute reseller).
     (2) $800M/18.2M-RSU co-CEO grant triggered governance backlash (Jim Chanos public attack).
-  - Consensus PT still ~$78-80 but competitive + governance overhangs now real. Hold/watch, not add.
+  - Consensus PT still ~$75-76 (+79%) but competitive + governance overhangs real. Next earnings Sept 16.
+  - Stabilized ~$42 (from $39 low). Meta Compute more overhang than proven threat; memory shortage confirms compute demand > supply. Still hairy (weak rev/MW, Microsoft over-reliance). Starter/watch.
 
 ### BRUN
 - **Company:** Boost Run
@@ -122,6 +125,10 @@ Companies that are candidates for deeper research and potential investment. Grou
 ### AVAV
 - **Company:** AeroVironment
 - **Theme:** Drones, Autonomous Systems, Defense Technology
+- **Notes:**
+  - Direct beneficiary of renewed US/Iran conflict (July 2026). Switchblade loitering munitions combat-proven.
+  - Record FY2026, ~$1.2B funded backlog, $500M Army counter-UAS contract (late June). BlueHalo acquisition added space/C-UAS/directed energy.
+  - CEO: "unprecedented demand signals," significant contract wins expected next 12-24 months. Event-driven, uncorrelated to AI/rate tape.
 
 ### RKLB
 - **Company:** Rocket Lab
@@ -140,6 +147,7 @@ Companies that are candidates for deeper research and potential investment. Grou
   - Q1 2026 EPS $2.74 (beat $2.59). FY2026 guide $11-12/share. 1GW nuclear uprates, $3.9B capex.
   - Stock ~$239 vs median PT ~$358 (+50%). Pressured by block-share overhang (~$279-281 offering price).
   - Overbuilding fear is misdirected: PJM hit record 166GW demand July 2, prices spiked ~900%. Power is the bottleneck, not compute. Q2 earnings Aug 6.
+  - Stock ~$250 but -29% YTD (double de-rating: rate-sensitive utility + "AI infra" glut fear) — both misapplied. PJM speeding up data-center deals. Iran energy shock adds tailwind. Top pick.
 
 ### VST
 - **Company:** Vistra
