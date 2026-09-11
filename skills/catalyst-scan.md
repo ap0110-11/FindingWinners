@@ -81,6 +81,8 @@ Run all six lanes **concurrently** if your platform supports it — they share n
 
 Batch tickers within a lane (4–6 per research task) so you're running roughly 6–12 tasks, not 100. Give each task: the tickers, the lane spec from `framework/sources.md`, the lookback window, the scan questions, and the evidence card format.
 
+**Never state a date, a reported figure, or an "upcoming" event in a brief from memory of the prior scan.** Every such fact must be copied from `state/ledger.md` or the name's dossier, and any event you describe as pending must be checked against the company's IR calendar *before* the brief goes out. A wrong date in a brief does not stay in the brief — lanes reason from it, and it comes back as a conclusion. On 2026-09-09 four dates were wrong across two lane briefs despite the ledger holding all four correctly; one of them ("IREN reports Sept 16") produced a false event-collision finding in the macro lane that had to be retracted downstream. If you cannot source a date, write "date unverified — confirm at IR" and let the lane resolve it.
+
 | Lane | Focus | Spec |
 |---|---|---|
 | **A — Filings** | 10-K/Q, 8-K, proxy, S-1/3, language diffs, cash conversion, share count | `framework/sources.md` Lane A |

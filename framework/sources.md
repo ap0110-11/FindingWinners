@@ -98,6 +98,14 @@ This lane answers "who owns it and who's leaning which way" — the other half o
 - Confidential treatment requests let managers delay disclosure of accumulations.
 - Index and quant funds dominate the holder list and their changes are mechanical, not opinions. Filter for discretionary managers.
 
+**Sanity-check the aggregate before you use it.** Aggregator totals break in ways that are easy to miss and fatal to read past:
+- **Filer-entity restructuring double-counts.** When a large complex re-registers its filers, old and new CIKs both appear in the same quarter and aggregate share counts inflate mechanically. Vanguard and BlackRock both did this in 2026, which is why the Q2 2026 dataset showed total institutional ownership *above shares outstanding* for several names — CEG at 123%, ALAB at 122%, MRVL at 116%.
+- **Gross individual misreports pass through unfiltered.** Q2 2026 had CALSTRS reporting ~1.98bn shares of MU, roughly 176% of the company.
+
+So: **compute total institutional shares as a percentage of shares outstanding first.** If it exceeds ~100%, or the holder count jumps discontinuously, the aggregate is contaminated — discard the total-ownership and holder-count deltas for that quarter entirely and fall back to (a) manager-level Q/Q changes matched by CIK for named managers, and (b) ownership *levels* from an independent dataset. Say in the report that you did this. Manager-level data usually survives even when the aggregate doesn't.
+
+**Confirm any large manager-level move against a 13G/A** before treating it as a finding. A 56% cut that also appears in a T1 amendment is real; one that appears only in the aggregator may be a filer artifact.
+
 **How to use it correctly:** as an *expectations* input, not a *validation* input. Institutional under-ownership plus improving fundamentals is a setup. Institutional crowding plus a consensus-long narrative is a warning. Never buy something because a famous manager did.
 
 ### 13D / 13G
@@ -105,7 +113,7 @@ This lane answers "who owns it and who's leaning which way" — the other half o
 - A 13D on a watchlist name changes the catalyst calendar immediately.
 
 ### Form 4 — Insider Activity
-- Filed within 2 business days. `openinsider.com` is the fastest screen.
+- Filed within 2 business days. `openinsider.com` is the fastest screen, but its table markup changes and has silently failed to parse. **Prefer parsing Form 4 XML directly from EDGAR** — it is T1 rather than T4, and it exposes the 10b5-1 flag, transaction code, and officer title, which is exactly what separates a mechanical sale from an informative one. Use the screen for speed and the XML for anything that reaches a card.
 - **Signal ranking:** clustered open-market buys by multiple officers/directors > a single large CEO open-market buy > buys at a premium to market. All of these are meaningfully informative.
 - **Noise:** sales under a 10b5-1 plan, option exercises, tax withholding. Most insider selling is noise; almost no insider buying is.
 - Check for *new or amended* 10b5-1 plans right before a catalyst — that's a tell worth noting.
@@ -136,11 +144,26 @@ Capture:
 - **Reverse-engineer the price:** roughly what revenue growth and margin does the current price imply over the next 3–5 years? Then state whether the actual trajectory beats or misses that implied path. This one step converts a vague "it's cheap" into a testable claim, and it is the core of the whole framework.
 - Recent multiple compression/expansion decomposition: how much of the stock's move was estimates vs. multiple?
 
+**When consensus panels disagree, check the basis before the level.** Aggregators run different EPS bases — one closer to GAAP, one to company non-GAAP — and the gap can be enormous (on 2026-09-09, CRWD showed $0.09 on one panel against $1.26 on another for the same period). **Revision direction and breadth are basis-independent and survive the disagreement; levels do not.** Pick one panel for levels, say which, and use the other only for direction.
+
+**When two panels give conflicting consensus for an event that already happened, the price reaction settles it.** Consensus is T4 and a stale vintage looks identical to a current one. The move on the print is T2 and tells you what the market was actually positioned for. On 2026-09-09 two lanes reported AVAV as both a 4.5% beat and a 9% miss on identical revenue; the stock fell 5.4% that session, which resolved it. Do not average conflicting consensus figures — that manufactures a bar nobody was trading against.
+
 ---
 
 ## Lane D — Social & Retail Sentiment
 
 Used for **perception and crowding**, never for facts. The goal is to locate the crowd relative to us.
+
+### Access reality — read before planning this lane
+
+As of 2026-09-09, **most of the sources below are not reachable from an automated agent.** Verified that run: Reddit returns HTTP 403 on all JSON routes and gates `old.reddit.com`; the PullPush aggregator returns 429 explicitly refusing automated access; public mirrors serve proof-of-work anti-scraping challenges (**do not circumvent these — they are a deliberate operator control**); X/Twitter serves a JavaScript shell with no content; Seeking Alpha returns 403 on symbol, analysis, and API routes; Glassdoor times out.
+
+**What actually worked, in priority order:**
+1. **StockTwits public API** — message-level data with sentiment tags. This is the reliable backbone of the lane, not a supplement. Anchor samples at *matched intraday times* across scans, because message IDs are sequential and an overnight-vs-midsession comparison is an artifact. Read the price quotes embedded in the same messages so sentiment and price are measured at the same instant.
+2. **Hacker News search API (Algolia)** — date-filterable, first-party, and the best available substitute for the practitioner subs. It is a **different population** — more software and infrastructure engineers, fewer network and facilities operators — so treat it as adjacent to `r/networking` or `r/datacenter`, never equivalent.
+3. **Blind** public company pages — coverage is uneven and mostly limited to large employers. Check that posts fall inside the window; stale threads are easy to misread as current.
+
+**Do not infer a Reddit or X read from web-search snippets about them.** Second-hand characterizations are unreliable in a way that is measurable: on 2026-09-09 trade media described IREN retail sentiment as having "tilted bearish" while direct StockTwits measurement showed **96.2% bullish**. If you could not reach a source, the finding is "not measured," not a softer version of measured.
 
 ### Reddit
 If accessible directly or through search: cover `r/stocks`, `r/investing`, `r/wallstreetbets`, `r/ValueInvesting`, ticker-specific subs, and domain subs where practitioners actually work (`r/hardware`, `r/networking`, `r/datacenter`, `r/sysadmin`, `r/MachineLearning`, `r/energy`).

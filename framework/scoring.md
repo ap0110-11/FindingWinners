@@ -73,6 +73,30 @@ A gap with no catalyst is a value trap. This dimension is what separates the two
 
 ---
 
+## The Transmission Check
+
+Added 2026-09-09 after the macro lane found **three simultaneous instances** of the same error in the 2026-07-13 scan. Three instances triggers the mandatory-change rule.
+
+The error: **treating a sector's operational exposure as its market exposure.** Before scoring Catalyst Path above a 3, name the mechanism by which the operational tailwind reaches the share price, and name what could sever it.
+
+The July scan got all three of these backwards, and each failure had a different severing mechanism:
+
+| Call | Operationally | In the market | What severed it |
+|---|---|---|---|
+| Defense would benefit from the war | Correct — demand and contract flow both rose | Wrong — primes fell 13–30% | **Appropriations.** The FY27 budget stalled into continuing resolutions at prior-year levels. Fighting a war and funding one are separate decisions on separate calendars. |
+| Power would benefit from record demand | Correct — record peaks, 18.5-year PPAs signed | Wrong — utilities were the laggard, +0.47% over three months | **Duration.** Contracted long-dated cash flows are a rate instrument first and a power story second. |
+| Demand-side software was the safe harbor | Correct — results were strong, ARR accelerated | Wrong — it became the most exposed bucket | **Narrative substitution.** A competitor's product launch repriced the category regardless of reported numbers. |
+
+So the check is three questions:
+
+1. **Who has to write a cheque, and have they actually been authorized to?** Government demand needs an appropriation, not just a requirement. Corporate demand needs a budget line, not just an intention.
+2. **What is this asset priced as?** A stock is valued in whatever bucket the market trades it in. Long-dated contracted cash flow trades on rates whatever the underlying commodity is doing. Getting this right is the same skill as spotting the Misclassified setup — you're asking which bucket applies, and here you're asking it about yourself.
+3. **Can the thesis be repriced by something that isn't a number?** A model release, a political shift, or an index change moves prices without touching fundamentals. If yes, the catalyst is contingent and Catalyst Path caps at 3.
+
+A tailwind with no transmission path is not a catalyst. It's a fact about the world that the share price is free to ignore, and often does.
+
+---
+
 ## Evidence Confidence — Scored Separately, Never Added In
 
 Confidence is not a sixth dimension. It's a multiplier on how much the score is allowed to move real money.
@@ -161,5 +185,18 @@ Every Core or High conviction call, and every Pass on a name that previously sco
 - Resolution date
 - The setup name from `framework/goal.md` §3
 - The lane that produced the decisive evidence
+
+### Rules for writing a prediction
+
+Added 2026-09-09 after the first resolution cycle, where **three of eight predictions carried wrong event dates** and one of those made an already-resolved prediction look open.
+
+1. **Verify the event date at the company's own investor-relations page** before writing the claim. Do not infer it from the prior year, from a sell-side calendar, or from the fiscal-quarter pattern. Check the fiscal year end — a company whose year ends June 30 does not report on the calendar cadence you assumed.
+2. **Leave slack between the event and the resolution date.** If the event lands on the deadline, a one-week slip makes the prediction unresolvable.
+3. **Prefer single-clause claims.** Compound predictions ("earnings confirm X *and* the stock outperforms") have to be graded twice and invite anchor-shopping. If a compound claim is unavoidable, **name the price anchor explicitly** — normally the date the prediction was made, not the event date.
+4. **Disambiguate thresholds up front.** "At or above the ~$50B guide" is not a threshold when the guide is $50.0B ± $1.0B. Write the number you mean.
+5. **Reason each name independently, even within a theme.** Copying a prediction's structure from a sibling name hides the dispersion inside the theme, which is exactly where the information is.
+6. **Prefer claims about disclosed facts over claims about price.** A prediction scoped to what management says or what a filing shows is gradable from one primary source; a price claim depends on the whole market.
+
+Amendments before the resolving event are legitimate and should be logged. Amendments after it are not.
 
 This is what makes the framework improvable rather than just repeatable. See `state/ledger.md`.
