@@ -38,6 +38,7 @@ The reason for the split: skills are verbs and there will be several of them, bu
 | `sources.md` | Where to look and how — SEC/EDGAR, 13F and insider data, expectations baseline, social sentiment, under-appreciated news. Defines the six research lanes and the source tiers |
 | `council.md` | Adversarial bull/bear debate protocol that runs before conviction is assigned |
 | `scoring.md` | Scoring rubric, conviction tiers, sizing, and exit discipline |
+| `valuing-powered-capacity.md` | Vertical playbook for land, grid interconnection, and powered shell. These are real-estate and infrastructure assets wearing technology tickers, and the generic reverse-engineering in `sources.md` Lane C is the wrong instrument for them |
 | `improve.md` | What gets measured, the error taxonomy, guardrails on changing the framework, and the changelog |
 | `execution.md` | Portability — neutral vocabulary, the fallback for environments without task delegation, and the rules that keep this repo harness-agnostic |
 

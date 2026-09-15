@@ -1,6 +1,6 @@
 # Valuing Powered Capacity — Land, Grid, and Shell
 
-Added 2026-09-15. A valuation playbook for companies whose asset is **energized land with a grid interconnection**, not compute. Written because the watchlist added GLXY, HUT and CIFR, and applying neocloud or tech multiples to them produces nonsense in both directions.
+Added 2026-09-15. A valuation playbook for companies whose asset is **energized land with a grid interconnection**, not compute. Written because the watchlist added GLXY, HUT, CIFR and APLD, and applying neocloud or tech multiples to them produces nonsense in both directions.
 
 The core claim: **these are real-estate and infrastructure assets wearing a technology ticker.** Value them on asset life, contract duration, and tenant credit. The multiple is an output, never an input.
 
@@ -117,6 +117,30 @@ Most companies entering this vertical arrived from bitcoin mining. That legacy s
 
 Add cash, subtract debt, and — critically — **account for the dilution overhang properly.** This vertical is financed by serial equity and convertible issuance. Count anti-dilutive potential shares, convertible-linked shares, and registered resale shelves, not just the basic count. For scale, IREN's excluded anti-dilutive shares totalled 146.1M weighted-average, roughly 37% of shares outstanding, including 71.8M from convertible notes (T1, 2026-08-27).
 
+### And check the legal wrapper, because a cap rate assumes one
+
+Added 2026-09-15 when APLD entered the watchlist and exposed this as a hole in the method above.
+
+**Part 1 capitalizes NOI at a cap rate drawn from data center REIT comps. Those comps are REITs.** A REIT pays no entity-level tax on distributed income, so its NOI reaches shareholders roughly intact. A C-corporation's does not. Applying a REIT-derived cap rate to a C-corp's NOI overvalues the asset by the entire corporate tax wedge, and at a 21% federal rate plus state tax that is not a rounding error — it is most of the margin of safety. **So establish the legal wrapper before Part 1, and if the company is a C-corp with no election, either capitalize after-tax NOI or widen the cap rate and say by how much.**
+
+**"We intend to convert" is not a conversion.** Announced intent is worth something as an option on a re-rating, but it is not the same as an election, and the gap between the two is where this vertical generates disappointment. Credit the REIT frame only once the election is actually made. Until then, value as a C-corp and treat the conversion as upside you have not paid for.
+
+**The reason intent often does not become election is that the services business breaks the tests.** These are the constraints, and they bite in a specific and predictable way:
+
+| Test | Requirement | Where a powered-capacity company fails it |
+|---|---|---|
+| 75% gross income | At least 75% of gross income from rents from real property, mortgage interest, and real property sales | **GPU-as-a-service revenue is not rent from real property.** A large ASC 606 cloud segment can breach this on its own |
+| 95% gross income | 95% from the above plus dividends, interest, and securities gains | Mining revenue and transaction-based crypto revenue are non-qualifying |
+| 75% asset test | 75% of assets in real estate assets, cash, and government securities | **GPUs are not real estate assets.** A company that bought the fleet has a balance-sheet problem, not just an income-statement one |
+| TRS cap | Securities of taxable REIT subsidiaries capped at 20% of assets | The usual fix — quarantine the service business in a TRS — has a size limit, and a large cloud segment can exceed it |
+| Distribution | Distribute at least 90% of REIT taxable income | Collides directly with a mid-build balance sheet; see below |
+
+**The trap that is easy to miss: impermissible tenant service income.** If a landlord provides services to a tenant beyond those customarily furnished, income from those services is non-qualifying — and if it exceeds 1% of all income from that property, **the entire rent from that property becomes non-qualifying**, not just the service fee. For a data center landlord that also operates, monitors, or manages tenant equipment, this is a live risk rather than a technicality, and it is the reason these structures route operations through a TRS or an independent contractor. When a company describes a "fully managed" or "turnkey" offering while claiming REIT eligibility, that tension needs resolving from the filing.
+
+**The distribution requirement is the one that costs shareholders money.** A 90% distribution obligation on a company still building capacity means it cannot retain cash flow to fund capex, so it must fund construction externally — more equity, more converts, more project debt. **A REIT election on a mid-build balance sheet mechanically increases the dilution rate.** That does not make the election wrong, because the tax saving may exceed the financing cost, but the two must be netted rather than the tax saving counted alone. Do that arithmetic explicitly: annual tax saved versus incremental dilution and interest at the current cost of capital.
+
+Finally, note what the wrapper does *not* change. **A REIT election changes the tax and the correct method; it changes nothing about tenant credit, interconnection stage, or power exposure.** A REIT full of unrated single-tenant leases funded by merchant power is still the same asset it was the day before. The structure is not the thesis.
+
 ---
 
 ## 4. The Screen: EV per MW, Computed Three Ways
@@ -172,11 +196,13 @@ A name in this vertical **cannot be scored** until all of the following are pull
 2. Lessor lease footnote, including future minimum lease payments by year
 3. MW normalized to critical IT load, with the conversion factor stated, split into energized / leased / in-queue
 4. Tenant identity and credit standing, plus lease term and escalators
-5. Interconnection agreement stage per site, and the governing state statute
+5. Interconnection agreement stage per site, the **RTO/ISO the site sits in**, and the governing state statute
 6. Power procurement structure — fixed, merchant, hedged, or owned generation
 7. Capex per MW actually incurred, from the cash flow statement rather than a presentation
 8. Full dilution: anti-dilutive potential shares, convertibles, registered resale shelves
 9. Related-party footnote
 10. Legacy segment gross profit per MW, compared to lease NOI per MW
+11. **Legal and tax wrapper** — C-corp, REIT elected, or REIT intended — and, where an election is claimed or planned, evidence that the gross-income and asset tests are actually met
+12. **Recourse versus non-recourse debt, and any joint-venture or non-controlling interest**, so that EV can be stated at both consolidated and economic-interest level
 
 Until then the name sits at Tier 3 with no score. **A score built on a presentation deck is worse than no score**, because it enters the ledger and corrupts the calibration record.
